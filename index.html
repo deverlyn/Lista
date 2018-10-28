@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.3.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<meta charset="utf-8">
+		<meta name="view port" content="width=device-width, user-scale=no" >
+		<title>List</title>
+	</head>
+	<body>
+		<form id="form">
+			<h1>Lista</h1>
+			<input type="text" id="item" placeholder="Digite um item">
+			<input type="submit" value="Adicionar" class="botao">
+			<ul id="lista">
+			</ul>
+		</form>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#form').on('submit', function(e){
+					e.preventDefault();
+					var lista = $('#item').val();
+					if(lista.length > 0){
+						$('#lista').append('<li>'+lista+' <buttom class="limpar" >Limpar<buttom></li>');
+						$('#item').val('');
+					}
+					$('.limpar').on('click', function(){
+						$(this).parent().remove()
+					});
+				})
+			;});
+		</script>
+	</body>
+</html>

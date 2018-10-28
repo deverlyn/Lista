@@ -1,0 +1,42 @@
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #808080;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+#form{
+	float: left;
+	margin-left: 35%;
+}
+.botao{
+	border-radius: 5px;
+	background-color: #fff;
+	border: thin #c0c0c0 solid;
+	padding: 5px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande";
+	box-shadow: 5px 5px 5px #dcdcdc;
+}
+.botao:hover{
+	background-color: #d3d3d3;
+	color: #fff;
+}
+#item{
+	font-family: "Lucida Sans Unicode", "Lucida Grande";
+	padding: 5px;
+	border-radius: 5px;
+	border: thin #c0c0c0 solid;
+	width: 350px;
+}
+.limpar{
+	border: thin #B222222 solid;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #B22222;
+	color: #fff;
+	float: right;
+}
+li{
+	margin-top: 20px;
+}
